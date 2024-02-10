@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="icon" href="./Assets/icon-256.png">
+    <title>晁光高速双核浏览器Chaoguang High-speed Browser</title>
+    <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+    <style>
+        html
+        {
+            min-width: 580px;
+            max-width: 800px;  
+            margin: 0 auto;  
+            height: 101%;
+        }
+
+        body 
+        {
+            background-color:rgb(249,249,249);
+            color:black;
+            font-family: 'HarmonyOS Sans SC', sans-serif;
+            min-width: 500px;
+            max-width: 720px;
+            margin: 40px; 
+        }
+
+        .ContentEntrance 
+        {
+            animation: FloatIn 1s cubic-bezier(0,1,0,1);
+        }
+
+        .page-title 
+        {
+            font-weight: bold;
+            font-size: 48px;
+            margin: 4px 0 20px 4px;
+        }
+
+        .page-secondtitle 
+        {
+            position: absolute;
+            width: 100%;
+            min-width: 580px;
+            max-width: 800px;
+            text-align: right;
+            font-size: 16px;
+            margin: -68px 40px 0 -88px;
+        }
+
+        .grid-item 
+        {
+            position: relative;
+            margin: 4px 0 0 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 68px;
+            background-color: none;
+            border: none;
+            max-width: 720px;
+        }
+
+        .grid-item img
+        {
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            left: 22px;
+            top: 22px;
+            bottom: 24;
+            border-radius: 8px;
+        }
+
+        .grid-item .title 
+        {
+            position: absolute;
+            font-size: 16px;
+            left: 68px;
+            right: 26px;
+            top: 25px;
+            bottom: 27px;
+            text-align: left;
+            font-family: 'HarmonyOS Sans SC', sans-serif;
+        }
+
+        .grid-item .description 
+        {
+            position: absolute;
+            font-size: 16px;
+            left: 26px;
+            top: 42px;
+            right: 172px;
+            bottom: 26px;
+            text-align: left;
+            font-family: 'HarmonyOS Sans SC', sans-serif;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+
+        @media (prefers-color-scheme: dark) 
+        {
+            body 
+            {
+                background-color: rgb(40,40,40);
+                color: white;
+            }
+        }
+
+        @keyframes FloatIn
+        {
+            0% 
+            {
+                opacity: 0;
+                transform: translateY(500px);
+            }
+            40% 
+            {
+                opacity: 0;
+                transform: translateY(500px);
+            }
+            100% 
+            {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">更新版本Update Version</h1>
+    <p class="page-secondtitle">Powered by FluentUI<br>VrD1</p>
+    <div class="ContentEntrance">
+        <div class="grid-container">
+            <fluent-button class="grid-item" onclick="window.open('https://github.com/xllgreen/Chaoguang-High-speed-Browser','_self')">
+                <img src="./Application/ChaoguangHigh-speedBrowser.png">
+                <span class="title">晁光高速双核浏览器简介Chaoguang High-speed Browser Introduction（点击这里前往源代码界面Click here to go to the source code interface）</span>
+                <p class="description">1.“小巧简洁”：去除不需要的冗余，回归本初的美好，安装包短小精悍，安装完成后仅仅占用硬盘55.3MB。2.“双核加持”：采用Google的目前最新的Chromium119.0.0内核为主，微软Microsoft推出的edge为辅，HTML5 Test分达420分，Basemark Web3.0。3.“开源全球”：个人开发者与微软Github合作，完全开源，永久免费。4.“隐私保护”：无多余权限，仅仅调用网络权限、访问服务器权限（用户调用）、蓝牙权限、麦克风权限、网络摄像头权限、位置权限，其余权限无权调用，所有数据保存在本地，不会上传到云端，最大程度保护隐私。5.“丝滑界面”：采用FluentUI,增加亚克力通透感风格，完美契合Windows11，采用开源的中国华为自研系统Harmony OS的Harmony OS Sans，遥遥领先。6.“内存低效”：降低内存占用仅为30M左右，急速启动，关闭后后台无进程。开发者：XLL小绿绿</p>
+                <span style="position:absolute; font-size: 16px; font-family: Segoe Fluent Icons; right: 26px; top: 25px; ">&#xE76C;</span>
+            </fluent-button>
+            <fluent-button class="grid-item" onclick="window.open('/Assets/晁光高速双核浏览器Chaoguang High-speed Browser1.0.3.zip','_self')">
+                <img src="./Application/ChaoguangHigh-speedBrowser.png">
+                <span class="title">晁光高速双核浏览器Chaoguang High-speed Browser1.0.3 beta</span>
+                <p class="description">1.设置英文界面更完善2.开始支持x32位、x64位、xARM32位、xARM64位Windows10，version1809，17763系统3.支持一键“访问XLL Studio”4.内存优化5.优化并调整了深色模式下的进度条6.接入蓝牙接口和附近设备接口7.接入背景媒体播放接口，在后台也能听歌8.完善若干bug内容并逐步增加新的API接入.鸣谢：微软Microsoft、github、Microsoft Visual Studio 2022.特别感谢：华为开发者社区Huawei Developer、FluentUI.bug预警及解决： ①由于开发者无数字签名，下载安装包后可能需要如下操作方可安装：右键软件包->数字签名->点击证书名->详细信息（D）->查看证书（V）->安装证书（I）->本地计算机（L）->下一步（N）->将所有证书都放入下列存储（P）->浏览（R）->受信任的根证书颁发机构->确定->下一步->完成</p>
+                <span style="position:absolute; font-size: 16px; font-family: Segoe Fluent Icons; right: 26px; top: 25px; ">&#xE76C;</span>
+            </fluent-button>
+            <fluent-button class="grid-item" onclick="window.open('/Assets/晁光高速双核浏览器Chaoguang High-speed Browser1.0.1.zip','_self')">
+                <img src="./Application/ChaoguangHigh-speedBrowser.png">
+                <span class="title">晁光高速双核浏览器Chaoguang High-speed Browser1.0.1 beta</span>
+                <p class="description">1.“小巧简洁”：去除不需要的冗余，回归本初的美好2.“双核加持”：采用Google的目前最新的Chromium119.0.0内核为主，微软Microsoft推出的edge为辅，HTML5兼容分达420分3.“开源全球”：个人开发者与微软Github合作，完全开源，永久免费。4.“隐私保护”：无多余权限，仅仅调用网络权限、麦克风权限、网络摄像头权限、位置权限，其余权限无权调用，所有数据保存在本地，不会上传到云端，最大程度保护隐私。</p>
+                <span style="position:absolute; font-size: 16px; font-family: Segoe Fluent Icons; right: 26px; top: 25px; ">&#xE76C;</span>
+            </fluent-button>
+        </div>
+    </div>
+</body>
+</html>
